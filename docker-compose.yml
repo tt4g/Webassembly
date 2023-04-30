@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  web-assembly-playground:
+    image: web-assembly-playground:0.0.1
+    container_name: web-assembly-playground
+    build:
+      context: ./docker/image
+      dockerfile: Dockerfile
+      args:
+        - RUST_VERSION=1.69.0
+    environment:
+      - PYTHONUNBUFFERED=1
+    networks:
+      - web-assembly-playground-network
+
+networks:
+  web-assembly-playground-network:
+    name: web-assembly-playground-network
+    driver: bridge

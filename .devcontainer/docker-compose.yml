@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  web-assembly-playground:
+    volumes:
+      - .:/workspace:cached
+    tty: true

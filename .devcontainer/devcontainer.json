@@ -1,0 +1,23 @@
+{
+    "name": "web-assembly-playground Docker Compose",
+    "dockerComposeFile": ["../docker-compose.yml", "docker-compose.yml"],
+    "service": "web-assembly-playground",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "editorconfig.editorconfig",
+                "bungcip.better-toml",
+                "ryu1kn.partial-diff",
+                "mosapride.zenkaku",
+                "rust-lang.rust-analyzer",
+                "vadimcn.vscode-lldb",
+                "serayuzgur.crates",
+                "swellaby.vscode-rust-test-adapter",
+                "JScearcy.rust-doc-viewer",
+                "kevinkyang.auto-comment-blocks",
+                "tamasfe.even-better-toml"
+            ]
+        }
+    }
+}
