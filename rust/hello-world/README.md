@@ -1,11 +1,18 @@
 WASI: Hello World project
 
+## Setup
+
 ### Create project
 
 ```shell
 # Create Project.
 $ cargo new hello-world --bin
 $ cd hello-world
+```
+
+### Setup Rust
+
+```shell
 # Add target
 $ rustup target add wasm32-wasi
 ```
