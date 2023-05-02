@@ -35,7 +35,11 @@ $ wasmer ./target/wasm32-wasi/debug/hello-world.wasm
 Create executable from `.wasm`.
 
 ```shell
-$ wasmer create-exe target/wasm32-wasi/debug/hello-world.wasm -o ./hello-world
+# Avoid a Wasmer 3.x bug that could not build if filename contains hyphens.
+# https://github.com/wasmerio/wasmer/issues/3834
+$ mv ./target/wasm32-wasi/debug/hello-world.wasm ./target/wasm32-wasi/debug/hello_world.wasm
+
+$ wasmer create-exe ./target/wasm32-wasi/debug/hello_world.wasm -o ./hello_world
 ```
 
 #### Wasmtime
