@@ -17,14 +17,14 @@ $ cd hello-world
 $ rustup target add wasm32-wasi
 ```
 
-### Build WASI
+## Build WASI
 
 ```shell
 # Build
 $ cargo build --target wasm32-wasi
 ```
 
-#### Wasmer
+## Wasmer
 
 Run.
 
@@ -64,7 +64,7 @@ $ wasmer create-exe ./target/wasm32-wasi/debug/hello_world.wasm \
     -o ./hello_world.exe
 ```
 
-#### Wasmtime
+## Wasmtime
 
 Run.
 
